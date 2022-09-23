@@ -32,3 +32,8 @@ pip install MarkupSafe
 pip install markupsafe==2.0.1
 sudo apt-get install python3-matplotlib
 pip install pygame
+
+echo -e "${blue} setup new rules for usb names${NC}"
+sudo mv robot-usb-ports.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules
+sudo udevadm trigger

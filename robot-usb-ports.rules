@@ -1,0 +1,3 @@
+KERNEL=="ttyUSB*", ATTRS{product}=="CP2102 USB to UART Bridge Controller", SYMLINK+="imu"
+KERNEL=="video*", ATTRS{product}=="HD Pro Webcam C920", SYMLINK+="camera"
+KERNEL=="ttyUSB*", ATTRS{product}=="FT232R USB UART", SYMLINK+="motors"
